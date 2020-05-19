@@ -1,0 +1,90 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ErrorHandler - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.blocking.errors</a>&nbsp;/&nbsp;<a href="./index.html">ErrorHandler</a><br/>
+<br/>
+<h1>ErrorHandler</h1>
+<code><span class="identifier">@RestControllerAdvice</span> <span class="keyword">class </span><span class="identifier">ErrorHandler</span></code><ul><li></li>
+</ul>
+<p>Class that implements custom error handling.
+Trieda ktorá implementuje vlastné spravocanie výnimiek.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="identifier">ErrorHandler</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="handle-illegal-argument.html">handleIllegalArgument</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">fun </span><span class="identifier">handleIllegalArgument</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.errors.ErrorHandler$handleIllegalArgument(java.lang.IllegalArgumentException)/ex">ex</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-illegal-argument-exception/index.html"><span class="identifier">IllegalArgumentException</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="handle-methon-not-supported.html">handleMethonNotSupported</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">fun </span><span class="identifier">handleMethonNotSupported</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.errors.ErrorHandler$handleMethonNotSupported(org.springframework.web.HttpRequestMethodNotSupportedException)/ex">ex</span><span class="symbol">:</span>&nbsp;<span class="identifier">HttpRequestMethodNotSupportedException</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="handle-reported-overlimit-transaction-bad-request-exception.html">handleReportedOverlimitTransactionBadRequestException</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">fun </span><span class="identifier">handleReportedOverlimitTransactionBadRequestException</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.errors.ErrorHandler$handleReportedOverlimitTransactionBadRequestException(fei.stuba.gono.kotlin.errors.ReportedOverlimitTransactionBadRequestException)/ex">ex</span><span class="symbol">:</span>&nbsp;<a href="../../fei.stuba.gono.kotlin.errors/-reported-overlimit-transaction-bad-request-exception/index.html"><span class="identifier">ReportedOverlimitTransactionBadRequestException</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="handle-reported-overlimit-transaction-not-found-exception.html">handleReportedOverlimitTransactionNotFoundException</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">fun </span><span class="identifier">handleReportedOverlimitTransactionNotFoundException</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.errors.ErrorHandler$handleReportedOverlimitTransactionNotFoundException(fei.stuba.gono.kotlin.errors.ReportedOverlimitTransactionNotFoundException)/ex">ex</span><span class="symbol">:</span>&nbsp;<a href="../../fei.stuba.gono.kotlin.errors/-reported-overlimit-transaction-not-found-exception/index.html"><span class="identifier">ReportedOverlimitTransactionNotFoundException</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="handle-type-not-supported.html">handleTypeNotSupported</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">fun </span><span class="identifier">handleTypeNotSupported</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.errors.ErrorHandler$handleTypeNotSupported(org.springframework.web.HttpMediaTypeNotSupportedException)/ex">ex</span><span class="symbol">:</span>&nbsp;<span class="identifier">HttpMediaTypeNotSupportedException</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="handle-validation-exception.html">handleValidationException</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">fun </span><span class="identifier">handleValidationException</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.errors.ErrorHandler$handleValidationException(org.springframework.validation.BindException)/ex">ex</span><span class="symbol">:</span>&nbsp;<span class="identifier">BindException</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">handleValidationException</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.errors.ErrorHandler$handleValidationException(org.springframework.web.bind.MethodArgumentNotValidException)/ex">ex</span><span class="symbol">:</span>&nbsp;<span class="identifier">MethodArgumentNotValidException</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,49 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>JWTAuthorizationFilter - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.blocking.security</a>&nbsp;/&nbsp;<a href="./index.html">JWTAuthorizationFilter</a><br/>
+<br/>
+<h1>JWTAuthorizationFilter</h1>
+<code><span class="keyword">class </span><span class="identifier">JWTAuthorizationFilter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">BasicAuthenticationFilter</span></code><ul><li></li>
+</ul>
+<p>Class implementing BasicAuthenticationFilter, using JWT. Checks if the Authorization header
+field of HTTP request
+is correctly formed e.g. contains "Bearer JWT", verifies the JWT signature and checks if it contains valid employee
+credentials.
+Trieda implementujúca rozhranie BasicAuthenticationFilter pomocou JWT. Skontroluje
+či Authorization hlavička HTTP požiadavky obsahuje "Bearer JWT", kde JWT je korektný JWT a skontroluje,
+či obsahuje správne údaje o zamestnancovi.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="identifier">JWTAuthorizationFilter</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.security.JWTAuthorizationFilter$<init>(org.springframework.security.authentication.AuthenticationManager, fei.stuba.gono.kotlin.blocking.services.EmployeeService)/authenticationManager">authenticationManager</span><span class="symbol">:</span>&nbsp;<span class="identifier">AuthenticationManager</span><span class="symbol">, </span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.security.JWTAuthorizationFilter$<init>(org.springframework.security.authentication.AuthenticationManager, fei.stuba.gono.kotlin.blocking.services.EmployeeService)/employeeService">employeeService</span><span class="symbol">:</span>&nbsp;<a href="../../fei.stuba.gono.kotlin.blocking.services/-employee-service/index.html"><span class="identifier">EmployeeService</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="do-filter-internal.html">doFilterInternal</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">fun </span><span class="identifier">doFilterInternal</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.security.JWTAuthorizationFilter$doFilterInternal(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, javax.servlet.FilterChain)/request">request</span><span class="symbol">:</span>&nbsp;<span class="identifier">HttpServletRequest</span><span class="symbol">, </span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.security.JWTAuthorizationFilter$doFilterInternal(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, javax.servlet.FilterChain)/response">response</span><span class="symbol">:</span>&nbsp;<span class="identifier">HttpServletResponse</span><span class="symbol">, </span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.security.JWTAuthorizationFilter$doFilterInternal(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, javax.servlet.FilterChain)/chain">chain</span><span class="symbol">:</span>&nbsp;<span class="identifier">FilterChain</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

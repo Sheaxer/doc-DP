@@ -1,0 +1,68 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ErrorHandler - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.nonblocking.errors</a>&nbsp;/&nbsp;<a href="./index.html">ErrorHandler</a><br/>
+<br/>
+<h1>ErrorHandler</h1>
+<code><span class="identifier">@RestControllerAdvice</span> <span class="keyword">class </span><span class="identifier">ErrorHandler</span></code><ul><li></li>
+</ul>
+<p>Class that implements custom error handling.
+Trieda ktorá implementuje vlastné spravocanie výnimiek.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="identifier">ErrorHandler</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="handle-bad-request.html">handleBadRequest</a></h4>
+</td>
+<td>
+<p>Handles ReportedOverlimitTransactionBadRequestException by returning
+the error code and sending HTTP code BAD_REQUEST - 400. Suspending function.
+Spracúvava ReportedOverlimitTransactionBadRequestException výnimku vrátením
+HTTP kódu BAD_REQUEST - 400 a chybovej hlášky v tele správy.  Zastaviteľná funkcia.</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">handleBadRequest</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.errors.ErrorHandler$handleBadRequest(fei.stuba.gono.kotlin.errors.ReportedOverlimitTransactionBadRequestException)/ex">ex</span><span class="symbol">:</span>&nbsp;<a href="../../fei.stuba.gono.kotlin.errors/-reported-overlimit-transaction-bad-request-exception/index.html"><span class="identifier">ReportedOverlimitTransactionBadRequestException</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="handle-not-found.html">handleNotFound</a></h4>
+</td>
+<td>
+<p>Handles ReportedOverlimitTransactionNotFoundException
+by returning the error code and sending HTTP code NOT_FOUND - 404. Suspending function.
+Spracúváva ReportedOverlimitTransactionNotFoundException výnimku
+vrátením HTTP kódu 404 Not Found a chybovej hlášky v tele správy.  Zastaviteľná funkcia.</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">handleNotFound</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.errors.ErrorHandler$handleNotFound(java.lang.Exception)/ex">ex</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html"><span class="identifier">Exception</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="handle-reported-overlimit-transaction-validation-exception.html">handleReportedOverlimitTransactionValidationException</a></h4>
+</td>
+<td>
+<p>Handles validation errors that occur during put and post REST methods. Returns
+HTTTp code BAD_REQUEST - 400 and list of validation errors. Suspending function.
+Spracuváva validačné výnimky ktoré môžu nastať počas PUT a POST REST metód. Vracia
+HTTP kód BAD_REQUEST - 400 a zoznam validačných chýb v tele odpovede. Zastaviteľná funkcia.</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">handleReportedOverlimitTransactionValidationException</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.errors.ErrorHandler$handleReportedOverlimitTransactionValidationException(fei.stuba.gono.kotlin.nonblocking.errors.ReportedOverlimitTransactionValidationException)/ex">ex</span><span class="symbol">:</span>&nbsp;<a href="../-reported-overlimit-transaction-validation-exception/index.html"><span class="identifier">ReportedOverlimitTransactionValidationException</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,62 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>JWTAuthenticationFilter - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.blocking.security</a>&nbsp;/&nbsp;<a href="./index.html">JWTAuthenticationFilter</a><br/>
+<br/>
+<h1>JWTAuthenticationFilter</h1>
+<code><span class="keyword">class </span><span class="identifier">JWTAuthenticationFilter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">UsernamePasswordAuthenticationFilter</span></code><ul><li></li>
+</ul>
+<p>Class that implements UsernamePasswordAuthenticationFilter for authentication
+for access to ReportedOverlimitTransaction REST resource for bank employees.
+Allows authentication with username and password for employees. Checks the provided username
+and password and if valid issues a JWT that enables access to the resources.
+Trieda, ktorá implementuje rozhranie UsernamePasswordAuthenticationFilter
+na overenie prístupu k REST zdrojom pre bankových zamestnancov. Skontroluje či poslané
+používateľské meno a heslo sú korektný pár a ak áno, vydá JWT ktorý umožnuje prístup k zdrojom.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="#">com.auth0.jwt.JWT</a></p>
+<p><a href="#">UsernamePasswordAuthenticationFilter</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="identifier">JWTAuthenticationFilter</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.security.JWTAuthenticationFilter$<init>(org.springframework.security.authentication.AuthenticationManager)/authenticationManager1">authenticationManager1</span><span class="symbol">:</span>&nbsp;<span class="identifier">AuthenticationManager</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="attempt-authentication.html">attemptAuthentication</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">fun </span><span class="identifier">attemptAuthentication</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.security.JWTAuthenticationFilter$attemptAuthentication(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)/request">request</span><span class="symbol">:</span>&nbsp;<span class="identifier">HttpServletRequest</span><span class="symbol">, </span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.security.JWTAuthenticationFilter$attemptAuthentication(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)/response">response</span><span class="symbol">:</span>&nbsp;<span class="identifier">HttpServletResponse</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Authentication</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="successful-authentication.html">successfulAuthentication</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">fun </span><span class="identifier">successfulAuthentication</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.security.JWTAuthenticationFilter$successfulAuthentication(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, javax.servlet.FilterChain, org.springframework.security.core.Authentication)/request">request</span><span class="symbol">:</span>&nbsp;<span class="identifier">HttpServletRequest</span><span class="symbol">, </span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.security.JWTAuthenticationFilter$successfulAuthentication(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, javax.servlet.FilterChain, org.springframework.security.core.Authentication)/response">response</span><span class="symbol">:</span>&nbsp;<span class="identifier">HttpServletResponse</span><span class="symbol">, </span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.security.JWTAuthenticationFilter$successfulAuthentication(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, javax.servlet.FilterChain, org.springframework.security.core.Authentication)/chain">chain</span><span class="symbol">:</span>&nbsp;<span class="identifier">FilterChain</span><span class="symbol">, </span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.security.JWTAuthenticationFilter$successfulAuthentication(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, javax.servlet.FilterChain, org.springframework.security.core.Authentication)/authResult">authResult</span><span class="symbol">:</span>&nbsp;<span class="identifier">Authentication</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

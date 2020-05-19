@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ReportedOverlimitTransactionServiceImpl.deleteTransaction - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.blocking.mongo.services</a>&nbsp;/&nbsp;<a href="index.html">ReportedOverlimitTransactionServiceImpl</a>&nbsp;/&nbsp;<a href="./delete-transaction.html">deleteTransaction</a><br/>
+<br/>
+<h1>deleteTransaction</h1>
+<a name="fei.stuba.gono.kotlin.blocking.mongo.services.ReportedOverlimitTransactionServiceImpl$deleteTransaction(kotlin.String)"></a>
+<code><span class="keyword">fun </span><span class="identifier">deleteTransaction</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.mongo.services.ReportedOverlimitTransactionServiceImpl$deleteTransaction(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><ul><li></li>
+</ul>
+<p>Deletes the entity with the given id if it exists in the repository and its state is not
+State.CLOSED.
+Zmaže entitu so zadaným id ak táto entita existovala a jej stav nie je State.CLOSED.</p>
+<h3>Parameters</h3>
+<p><a name="id"></a>
+<code>id</code> - id of entity.
+    id entity.</p>
+<h3>Exceptions</h3>
+<p><a name="ReportedOverlimitTransactionBadRequestException"></a>
+<code>ReportedOverlimitTransactionBadRequestException</code> - in case the entity couldn't
+be deleted because its state was State.CLOSED.
+ak entita nemohla byť zmazaná, pretože jej stav bol State.CLOSED</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../../fei.stuba.gono.kotlin.pojo/-state/index.html">State</a></p>
+</p>
+<p><strong>Return</strong><br/>
+<p>true if entity with given id was found, its state was not CLOSED and it was deleted.</p>
+
+
+<p>true ak entita existovala, jej stav nebol State.CLOSED a bola zmazaná, false ak entita
+neexistovala.</p>
+</p>
+</BODY>
+</HTML>

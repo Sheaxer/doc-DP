@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>NextSequenceService.getNewId - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.blocking.mongo.services</a>&nbsp;/&nbsp;<a href="index.html">NextSequenceService</a>&nbsp;/&nbsp;<a href="./get-new-id.html">getNewId</a><br/>
+<br/>
+<h1>getNewId</h1>
+<a name="fei.stuba.gono.kotlin.blocking.mongo.services.NextSequenceService$getNewId(org.springframework.data.repository.CrudRepository((kotlin.Any, kotlin.String)), kotlin.String)"></a>
+<code><span class="keyword">fun </span><span class="identifier">getNewId</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.mongo.services.NextSequenceService$getNewId(org.springframework.data.repository.CrudRepository((kotlin.Any, kotlin.String)), kotlin.String)/rep">rep</span><span class="symbol">:</span>&nbsp;<span class="identifier">CrudRepository</span><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.mongo.services.NextSequenceService$getNewId(org.springframework.data.repository.CrudRepository((kotlin.Any, kotlin.String)), kotlin.String)/sequenceName">sequenceName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code><ul><li></li>
+</ul>
+<p>Generates a new value of an id for saving new object in a database.
+Updates maximal value
+of sequence with the given name, checks if an entity with this id already exists in the repository.
+If it does exist, function finds the actual maximal value of id used to store entities in the repository and
+updates the sequence.
+Generuje novú hodnotu id na uloženie nového objektu do databázy. Aktualizuje
+maximálnu hodnotu sekvencie so zadaným menom, skontroluje či už existuje entita so zadaným id. Ak existuje,
+využije ďalšiu metódu na získanie skutočnej maximálnej hodnoty id v zadanom repozitáry a aktualizuje hodnotu
+sekvencie.</p>
+<h3>Parameters</h3>
+<p><a name="rep"></a>
+<code>rep</code> - repository where the object will be saved.
+    repozitár v ktorom bude objekt uložený.</p>
+<p><a name="sequenceName"></a>
+<code>sequenceName</code> - name of the sequence holding the id of last saved object.
+    názov sekvencie ktorá udržiava id posledného uloženého objektu.</p>
+<p><strong>Return</strong><br/>
+value of id that should be used to save object in
+the given repository.
+hodntota id ktoré by malo byť použité na uloženie
+objektu v zadanom repozitári.</p>
+</BODY>
+</HTML>

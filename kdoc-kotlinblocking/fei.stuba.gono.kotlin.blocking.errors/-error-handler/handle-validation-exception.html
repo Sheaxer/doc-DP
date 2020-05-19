@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ErrorHandler.handleValidationException - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.blocking.errors</a>&nbsp;/&nbsp;<a href="index.html">ErrorHandler</a>&nbsp;/&nbsp;<a href="./handle-validation-exception.html">handleValidationException</a><br/>
+<br/>
+<h1>handleValidationException</h1>
+<a name="fei.stuba.gono.kotlin.blocking.errors.ErrorHandler$handleValidationException(org.springframework.validation.BindException)"></a>
+<code><span class="identifier">@ExceptionHandler</span><span class="symbol">(</span>[NormalClass(value=org/springframework/validation/BindException)]<span class="symbol">)</span> <span class="identifier">@ResponseStatus</span><span class="symbol">(</span>HttpStatus.BAD_REQUEST<span class="symbol">)</span> <span class="keyword">fun </span><span class="identifier">handleValidationException</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.errors.ErrorHandler$handleValidationException(org.springframework.validation.BindException)/ex">ex</span><span class="symbol">:</span>&nbsp;<span class="identifier">BindException</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">&gt;</span></code><br/>
+<a name="fei.stuba.gono.kotlin.blocking.errors.ErrorHandler$handleValidationException(org.springframework.web.bind.MethodArgumentNotValidException)"></a>
+<code><span class="identifier">@ExceptionHandler</span><span class="symbol">(</span>[NormalClass(value=org/springframework/web/bind/MethodArgumentNotValidException)]<span class="symbol">)</span> <span class="identifier">@ResponseStatus</span><span class="symbol">(</span>HttpStatus.BAD_REQUEST<span class="symbol">)</span> <span class="keyword">fun </span><span class="identifier">handleValidationException</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.errors.ErrorHandler$handleValidationException(org.springframework.web.bind.MethodArgumentNotValidException)/ex">ex</span><span class="symbol">:</span>&nbsp;<span class="identifier">MethodArgumentNotValidException</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">&gt;</span></code><ul><li></li>
+</ul>
+<p>Handles validation errors that occur during put and post REST methods. Returns
+HTTTP code BAD_REQUEST - 400 and list of validation errors.
+Spracuváva validačné výnimky ktoré môžu nastať počas PUT a POST REST metód. Vracia
+HTTP kód BAD_REQUEST - 400 a zoznam validačných chýb v tele odpovede.</p>
+<h3>Parameters</h3>
+<p><a name="ex"></a>
+<code>ex</code> - caught validation exception.
+    zachytená validačná výnimka.</p>
+<p><strong>Return</strong><br/>
+List of validation error messages.
+Zoznam validačných chyhových hlášok.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="#">MethodArgumentNotValidException</a></p>
+</p>
+</BODY>
+</HTML>

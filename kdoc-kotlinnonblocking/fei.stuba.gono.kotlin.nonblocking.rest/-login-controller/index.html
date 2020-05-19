@@ -1,0 +1,55 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>LoginController - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.nonblocking.rest</a>&nbsp;/&nbsp;<a href="./index.html">LoginController</a><br/>
+<br/>
+<h1>LoginController</h1>
+<code><span class="identifier">@RestController</span> <span class="keyword">class </span><span class="identifier">LoginController</span></code><ul><li></li>
+</ul>
+<p>Rest controller that generates JWT that allows access to REST
+resources upon successfully providing correct username and corresponding password.
+Rest kontrolér ktorý generuje JWT ktorý umožňuje prístup k REST
+prostriedkom po úspešnom zadaní používateľského mena a zodpovedajúceho hesla.</p>
+<h3>Parameters</h3>
+<p><a name="bCryptPasswordEncoder"></a>
+<code>bCryptPasswordEncoder</code> - Password encoder used to encode the given password
+to check if is the same as stored password.
+Enkóder hesiel použitý na zakódovanie doručeného hesla ktoré sa porovná s uloženým
+heslom.</p>
+<p><a name="employeeService"></a>
+<code>employeeService</code> - Service used to retrieve and save Employee entities.
+Služba použitá na získanie a uloženie entít triedy Employee.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="identifier">LoginController</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.rest.LoginController$<init>(org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder, fei.stuba.gono.kotlin.nonblocking.services.EmployeeService)/bCryptPasswordEncoder">bCryptPasswordEncoder</span><span class="symbol">:</span>&nbsp;<span class="identifier">BCryptPasswordEncoder</span><span class="symbol">, </span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.rest.LoginController$<init>(org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder, fei.stuba.gono.kotlin.nonblocking.services.EmployeeService)/employeeService">employeeService</span><span class="symbol">:</span>&nbsp;<a href="../../fei.stuba.gono.kotlin.nonblocking.services/-employee-service/index.html"><span class="identifier">EmployeeService</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="login.html">login</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">login</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.rest.LoginController$login(fei.stuba.gono.kotlin.pojo.Employee)/employee">employee</span><span class="symbol">:</span>&nbsp;<a href="../../fei.stuba.gono.kotlin.pojo/-employee/index.html"><span class="identifier">Employee</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ResponseEntity</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

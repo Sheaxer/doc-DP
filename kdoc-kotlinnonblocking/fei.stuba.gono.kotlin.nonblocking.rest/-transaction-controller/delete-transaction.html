@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TransactionController.deleteTransaction - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.nonblocking.rest</a>&nbsp;/&nbsp;<a href="index.html">TransactionController</a>&nbsp;/&nbsp;<a href="./delete-transaction.html">deleteTransaction</a><br/>
+<br/>
+<h1>deleteTransaction</h1>
+<a name="fei.stuba.gono.kotlin.nonblocking.rest.TransactionController$deleteTransaction(kotlin.String)"></a>
+<code><span class="identifier">@DeleteMapping</span><span class="symbol">(</span>["/{id}"]<span class="symbol">)</span> <span class="identifier">@ResponseStatus</span><span class="symbol">(</span>HttpStatus.NO_CONTENT<span class="symbol">)</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteTransaction</span><span class="symbol">(</span><span class="identifier">@PathVariable</span> <span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.rest.TransactionController$deleteTransaction(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><ul><li></li>
+</ul>
+<p>DELETE method - that deletes the entity with given id.
+DELETE metóda - zmaže entitu so zadaným id.</p>
+<h3>Parameters</h3>
+<p><a name="id"></a>
+<code>id</code> - id of entity that should be deleted.
+    id entity ktorá by mala byť zmazaná</p>
+<h3>Exceptions</h3>
+<p><a name="ReportedOverlimitTransactionNotFoundException"></a>
+<code>ReportedOverlimitTransactionNotFoundException</code> - exception
+thrown if no entity with the given id was found.
+výnimka vyhodená ak nebola nájdená entita so zadaným id.</p>
+<p><a name="ReportedOverlimitTransactionBadRequestException"></a>
+<code>ReportedOverlimitTransactionBadRequestException</code> - exception thrown
+if entity with the given id couldn't be deleted.
+výnimka vyvolaná ak entita so zadaným id nemohla byť vymazaná.</p>
+</BODY>
+</HTML>

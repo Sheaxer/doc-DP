@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>EmployeeService - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.nonblocking.services</a>&nbsp;/&nbsp;<a href="./index.html">EmployeeService</a><br/>
+<br/>
+<h1>EmployeeService</h1>
+<code><span class="keyword">interface </span><span class="identifier">EmployeeService</span></code><ul><li></li>
+</ul>
+<p>Interface for marshalling and de-marshalling Employee entities.
+Rozhranie pre marshalling a de-marshalling entít triedy Employee.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="employee-exists-by-id.html">employeeExistsById</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">employeeExistsById</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.services.EmployeeService$employeeExistsById(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="employee-exists-by-username.html">employeeExistsByUsername</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">employeeExistsByUsername</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.services.EmployeeService$employeeExistsByUsername(kotlin.String)/userName">userName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="find-employee-by-username.html">findEmployeeByUsername</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">findEmployeeByUsername</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.services.EmployeeService$findEmployeeByUsername(kotlin.String)/userName">userName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../fei.stuba.gono.kotlin.pojo/-employee/index.html"><span class="identifier">Employee</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="save-employee.html">saveEmployee</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">saveEmployee</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.services.EmployeeService$saveEmployee(fei.stuba.gono.kotlin.pojo.Employee)/employee">employee</span><span class="symbol">:</span>&nbsp;<a href="../../fei.stuba.gono.kotlin.pojo/-employee/index.html"><span class="identifier">Employee</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../fei.stuba.gono.kotlin.pojo/-employee/index.html"><span class="identifier">Employee</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="validate.html">validate</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">validate</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.services.EmployeeService$validate(fei.stuba.gono.kotlin.pojo.Employee)/employee">employee</span><span class="symbol">:</span>&nbsp;<a href="../../fei.stuba.gono.kotlin.pojo/-employee/index.html"><span class="identifier">Employee</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../../fei.stuba.gono.kotlin.nonblocking.mongo.services/-employee-service-impl/index.html">EmployeeServiceImpl</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">class </span><span class="identifier">EmployeeServiceImpl</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">EmployeeService</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

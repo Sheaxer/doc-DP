@@ -1,0 +1,26 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AccountRepository.findAccountByIban - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.nonblocking.mongo.repositories</a>&nbsp;/&nbsp;<a href="index.html">AccountRepository</a>&nbsp;/&nbsp;<a href="./find-account-by-iban.html">findAccountByIban</a><br/>
+<br/>
+<h1>findAccountByIban</h1>
+<a name="fei.stuba.gono.kotlin.nonblocking.mongo.repositories.AccountRepository$findAccountByIban(kotlin.String)"></a>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">findAccountByIban</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.mongo.repositories.AccountRepository$findAccountByIban(kotlin.String)/iban">iban</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../fei.stuba.gono.kotlin.pojo/-account/index.html"><span class="identifier">Account</span></a><span class="symbol">?</span><span class="symbol">&gt;</span></code><ul><li></li>
+</ul>
+<p>Finds the entity identified by the given IBAN.
+Nájde entitu identifikovanú zadaným IBAN-om.</p>
+<h3>Parameters</h3>
+<p><a name="iban"></a>
+<code>iban</code> - <ul><li>IBAN identifying the Account entity, must not be null.
+    IBAN identikujúci entitu triedy Account, nemôže byť null.</li>
+</ul>
+</p>
+<p><strong>Return</strong><br/>
+Mono emitting the entity or Mono.empty() if no entity is found.
+Mono emitujúce entitu alebo Mono.empty() ak nebolo možné entitu nájsť.</p>
+</BODY>
+</HTML>

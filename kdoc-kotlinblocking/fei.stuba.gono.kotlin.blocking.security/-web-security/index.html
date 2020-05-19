@@ -1,0 +1,62 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>WebSecurity - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.blocking.security</a>&nbsp;/&nbsp;<a href="./index.html">WebSecurity</a><br/>
+<br/>
+<h1>WebSecurity</h1>
+<code><span class="identifier">@EnableWebSecurity</span> <span class="keyword">class </span><span class="identifier">WebSecurity</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">WebSecurityConfigurerAdapter</span></code><ul><li></li>
+</ul>
+<p>Class providing security configuration for the endpoints.
+Sets up authorization using JWTs. Allows
+unrestricted access to /login endpoint and secures all others with requiring
+to add Authorization field in HTTP header
+containing valid JWT with valid credentials of an employee.
+Trieda zabezpečuje nastavenie bezpečnosti pre endpoint-y.
+Povolí prístup na /login a /signup endpoint, a zabezpečí všetky ostatné endpoint-y, vyžadovaním
+pridania Authorization poľa v HTTP hlavičke, ktoré obsahuje platný JWT s údajmi o zamestnancovi</p>
+<ul><li>objektu triedy Employee.</li>
+</ul>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="identifier">WebSecurity</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.security.WebSecurity$<init>(org.springframework.security.core.userdetails.UserDetailsService, org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder)/userDetailsService">userDetailsService</span><span class="symbol">:</span>&nbsp;<span class="identifier">UserDetailsService</span><span class="symbol">, </span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.security.WebSecurity$<init>(org.springframework.security.core.userdetails.UserDetailsService, org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder)/bCryptPasswordEncoder">bCryptPasswordEncoder</span><span class="symbol">:</span>&nbsp;<span class="identifier">BCryptPasswordEncoder</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="configure.html">configure</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">fun </span><span class="identifier">configure</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.security.WebSecurity$configure(org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder)/auth">auth</span><span class="symbol">:</span>&nbsp;<span class="identifier">AuthenticationManagerBuilder</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">configure</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.security.WebSecurity$configure(org.springframework.security.config.annotation.web.builders.HttpSecurity)/http">http</span><span class="symbol">:</span>&nbsp;<span class="identifier">HttpSecurity</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="cors-configuration-source.html">corsConfigurationSource</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">fun </span><span class="identifier">corsConfigurationSource</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">CorsConfigurationSource</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

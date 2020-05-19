@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ReportedOverlimitTransactionService.deleteTransaction - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.nonblocking.services</a>&nbsp;/&nbsp;<a href="index.html">ReportedOverlimitTransactionService</a>&nbsp;/&nbsp;<a href="./delete-transaction.html">deleteTransaction</a><br/>
+<br/>
+<h1>deleteTransaction</h1>
+<a name="fei.stuba.gono.kotlin.nonblocking.services.ReportedOverlimitTransactionService$deleteTransaction(kotlin.String)"></a>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteTransaction</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.services.ReportedOverlimitTransactionService$deleteTransaction(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><ul><li></li>
+</ul>
+<p>Deletes the entity wtih by the given id.
+Zmaže entitu so zadaným id.</p>
+<h3>Parameters</h3>
+<p><a name="id"></a>
+<code>id</code> - id of entity to be deleted.
+    id entity, ktorú treba vymazať.</p>
+<h3>Exceptions</h3>
+<p><a name="ReportedOverlimitTransactionNotFoundException"></a>
+<code>ReportedOverlimitTransactionNotFoundException</code> - exception thrown if the entity with given
+id was not found výnimka vyvolaná, ak entita so zadaným id neexistuje.</p>
+<p><a name="ReportedOverlimitTransactionBadRequestException"></a>
+<code>ReportedOverlimitTransactionBadRequestException</code> - exception thrown if the
+entity couldn't be deleted because its state is State.CLOSED.
+v7nimka vyvolan8, ak entita nemôže byť vymazaná,
+pretože hodnota State je State.CLOSED.</p>
+</BODY>
+</HTML>

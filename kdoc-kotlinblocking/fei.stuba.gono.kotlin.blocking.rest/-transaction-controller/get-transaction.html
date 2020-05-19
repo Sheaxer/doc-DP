@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TransactionController.getTransaction - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.blocking.rest</a>&nbsp;/&nbsp;<a href="index.html">TransactionController</a>&nbsp;/&nbsp;<a href="./get-transaction.html">getTransaction</a><br/>
+<br/>
+<h1>getTransaction</h1>
+<a name="fei.stuba.gono.kotlin.blocking.rest.TransactionController$getTransaction(kotlin.String)"></a>
+<code><span class="identifier">@GetMapping</span><span class="symbol">(</span>["application/json"]<span class="symbol">, </span>["/{id}"]<span class="symbol">)</span> <span class="identifier">@ResponseStatus</span><span class="symbol">(</span>HttpStatus.OK<span class="symbol">)</span> <span class="keyword">fun </span><span class="identifier">getTransaction</span><span class="symbol">(</span><span class="identifier">@PathVariable</span> <span class="identifier" id="fei.stuba.gono.kotlin.blocking.rest.TransactionController$getTransaction(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../fei.stuba.gono.kotlin.blocking.pojo/-reported-overlimit-transaction/index.html"><span class="identifier">ReportedOverlimitTransaction</span></a></code><ul><li></li>
+</ul>
+<p>Returns single ReportedOverlimitTransaction based on its id.
+Vráti entitu triedy ReportedOverlimitTransaction podľa zadaného id.</p>
+<h3>Parameters</h3>
+<p><a name="id"></a>
+<code>id</code> - idd of the requested ReportedOverlimitTransaction.
+    id hľadanej entity.</p>
+<h3>Exceptions</h3>
+<p><a name="ReportedOverlimitTransactionNotFoundException"></a>
+<code>ReportedOverlimitTransactionNotFoundException</code> - <pre><code>    exception thrown if there is no instance entity with the given id.
+    výnimka vyvolaná, ak neexistuje entita so zadaným id.</code></pre></p>
+<p><strong>See Also</strong><br/>
+<p><a href="../../fei.stuba.gono.kotlin.blocking.pojo/-reported-overlimit-transaction/index.html">ReportedOverlimitTransaction</a></p>
+</p>
+<p><strong>Return</strong><br/>
+requested instance of ReportedOverlimitTransaction.
+hľadaná inštancia triedy ReportedOverlimitTransaction.</p>
+</BODY>
+</HTML>

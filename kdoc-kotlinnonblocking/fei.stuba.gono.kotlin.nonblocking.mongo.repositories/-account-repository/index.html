@@ -1,0 +1,45 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AccountRepository - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.nonblocking.mongo.repositories</a>&nbsp;/&nbsp;<a href="./index.html">AccountRepository</a><br/>
+<br/>
+<h1>AccountRepository</h1>
+<code><span class="identifier">@Repository</span> <span class="keyword">interface </span><span class="identifier">AccountRepository</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ReactiveCrudRepository</span><span class="symbol">&lt;</span><a href="../../fei.stuba.gono.kotlin.pojo/-account/index.html"><span class="identifier">Account</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code><ul><li></li>
+</ul>
+<p>Interface extending ReactiveCrudRepository for Account entities. Automatically
+instantiated by Spring
+Rozhranie rozširujúce ReactiveCrudRepository pre entity triedy Account. Automaticky inštanciované
+pomocou Spring.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../../fei.stuba.gono.kotlin.pojo/-account/index.html">Account</a></p>
+<p><a href="#">org.springframework.data.repository.reactive.ReactiveCrudRepository</a></p>
+</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="find-account-by-iban.html">findAccountByIban</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">findAccountByIban</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.mongo.repositories.AccountRepository$findAccountByIban(kotlin.String)/iban">iban</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../fei.stuba.gono.kotlin.pojo/-account/index.html"><span class="identifier">Account</span></a><span class="symbol">?</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="find-account-by-local-account-number.html">findAccountByLocalAccountNumber</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">findAccountByLocalAccountNumber</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.mongo.repositories.AccountRepository$findAccountByLocalAccountNumber(kotlin.String)/number">number</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><a href="../../fei.stuba.gono.kotlin.pojo/-account/index.html"><span class="identifier">Account</span></a><span class="symbol">?</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>fei.stuba.gono.kotlin.mongo.converters - demo</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">demo</a>&nbsp;/&nbsp;<a href="./index.html">fei.stuba.gono.kotlin.mongo.converters</a><br/>
+<br/>
+<h2>Package fei.stuba.gono.kotlin.mongo.converters</h2>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-offset-date-time-reading-converter/index.html">OffsetDateTimeReadingConverter</a></h4>
+</td>
+<td>
+<p>Custom converter for transforming object of Date class
+to OffsetDateTime object with offset UTC.
+Needed because MongoDB cannot serialize objects of OffsetDateTime class.</p>
+<code><span class="keyword">class </span><span class="identifier">OffsetDateTimeReadingConverter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Converter</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/Date.html"><span class="identifier">Date</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">OffsetDateTime</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-offset-date-time-writing-converter/index.html">OffsetDateTimeWritingConverter</a></h4>
+</td>
+<td>
+<p>Custom converter for MongoDB that converts instance of OffsetDateTime class
+to instance of Date class.
+Needed because MongoDB cannot deserialize object of OffsetDateTime class.</p>
+<code><span class="keyword">class </span><span class="identifier">OffsetDateTimeWritingConverter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Converter</span><span class="symbol">&lt;</span><span class="identifier">OffsetDateTime</span><span class="symbol">,</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/util/Date.html"><span class="identifier">Date</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

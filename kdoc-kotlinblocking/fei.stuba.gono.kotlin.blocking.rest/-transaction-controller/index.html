@@ -1,0 +1,77 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TransactionController - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.blocking.rest</a>&nbsp;/&nbsp;<a href="./index.html">TransactionController</a><br/>
+<br/>
+<h1>TransactionController</h1>
+<code><span class="identifier">@RestController</span> <span class="identifier">@RequestMapping</span><span class="symbol">(</span>["/reportedOverlimitTransaction"]<span class="symbol">)</span> <span class="keyword">class </span><span class="identifier">TransactionController</span></code><ul><li></li>
+</ul>
+<p>REST controller for GET,POST,PUT and DELETE methods for ReportedOverlimitTransaction entities
+on /reportedOverlimitTransaction.
+REST kontrolér ktorý poskytuje prístup k zdroju ReportedOverlimitTransaction entitám cez metódy
+GET, PUT, POST a DELETE na /reportedOverlimitTransaction endpointe.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../../fei.stuba.gono.kotlin.blocking.pojo/-reported-overlimit-transaction/index.html">ReportedOverlimitTransaction</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="identifier">TransactionController</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.rest.TransactionController$<init>(fei.stuba.gono.kotlin.blocking.services.ReportedOverlimitTransactionService)/transactionService">transactionService</span><span class="symbol">:</span>&nbsp;<a href="../../fei.stuba.gono.kotlin.blocking.services/-reported-overlimit-transaction-service/index.html"><span class="identifier">ReportedOverlimitTransactionService</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="delete-transaction.html">deleteTransaction</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">fun </span><span class="identifier">deleteTransaction</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.rest.TransactionController$deleteTransaction(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-transaction.html">getTransaction</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">fun </span><span class="identifier">getTransaction</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.rest.TransactionController$getTransaction(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../fei.stuba.gono.kotlin.blocking.pojo/-reported-overlimit-transaction/index.html"><span class="identifier">ReportedOverlimitTransaction</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="post-transaction.html">postTransaction</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">fun </span><span class="identifier">postTransaction</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.rest.TransactionController$postTransaction(fei.stuba.gono.kotlin.blocking.pojo.ReportedOverlimitTransaction)/newTransaction">newTransaction</span><span class="symbol">:</span>&nbsp;<a href="../../fei.stuba.gono.kotlin.blocking.pojo/-reported-overlimit-transaction/index.html"><span class="identifier">ReportedOverlimitTransaction</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../fei.stuba.gono.kotlin.blocking.pojo/-reported-overlimit-transaction/index.html"><span class="identifier">ReportedOverlimitTransaction</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">postTransaction</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.rest.TransactionController$postTransaction(kotlin.String, fei.stuba.gono.kotlin.blocking.pojo.ReportedOverlimitTransaction)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.rest.TransactionController$postTransaction(kotlin.String, fei.stuba.gono.kotlin.blocking.pojo.ReportedOverlimitTransaction)/transaction">transaction</span><span class="symbol">:</span>&nbsp;<a href="../../fei.stuba.gono.kotlin.blocking.pojo/-reported-overlimit-transaction/index.html"><span class="identifier">ReportedOverlimitTransaction</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../fei.stuba.gono.kotlin.blocking.pojo/-reported-overlimit-transaction/index.html"><span class="identifier">ReportedOverlimitTransaction</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="put-transaction.html">putTransaction</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">fun </span><span class="identifier">putTransaction</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.rest.TransactionController$putTransaction(kotlin.String, fei.stuba.gono.kotlin.blocking.pojo.ReportedOverlimitTransaction)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.rest.TransactionController$putTransaction(kotlin.String, fei.stuba.gono.kotlin.blocking.pojo.ReportedOverlimitTransaction)/transaction">transaction</span><span class="symbol">:</span>&nbsp;<a href="../../fei.stuba.gono.kotlin.blocking.pojo/-reported-overlimit-transaction/index.html"><span class="identifier">ReportedOverlimitTransaction</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../fei.stuba.gono.kotlin.blocking.pojo/-reported-overlimit-transaction/index.html"><span class="identifier">ReportedOverlimitTransaction</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

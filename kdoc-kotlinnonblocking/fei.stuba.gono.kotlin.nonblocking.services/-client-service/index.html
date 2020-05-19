@@ -1,0 +1,53 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ClientService - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.nonblocking.services</a>&nbsp;/&nbsp;<a href="./index.html">ClientService</a><br/>
+<br/>
+<h1>ClientService</h1>
+<code><span class="keyword">interface </span><span class="identifier">ClientService</span></code><ul><li></li>
+</ul>
+<p>Interface for marshalling and de-marshalling Client entities.
+Rozhranie na marshalling a de-marshalling entitít typu Client.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="client-exists-by-id.html">clientExistsById</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">clientExistsById</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.services.ClientService$clientExistsById(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-client-by-id.html">getClientById</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getClientById</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.services.ClientService$getClientById(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../fei.stuba.gono.kotlin.pojo/-client/index.html"><span class="identifier">Client</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../../fei.stuba.gono.kotlin.nonblocking.mongo.services/-client-service-impl/index.html">ClientServiceImpl</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">class </span><span class="identifier">ClientServiceImpl</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">ClientService</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

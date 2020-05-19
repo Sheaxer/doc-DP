@@ -1,0 +1,60 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>OnlineAccountValidator - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.blocking.validation</a>&nbsp;/&nbsp;<a href="./index.html">OnlineAccountValidator</a><br/>
+<br/>
+<h1>OnlineAccountValidator</h1>
+<code><span class="keyword">class </span><span class="identifier">OnlineAccountValidator</span></code><ul><li></li>
+</ul>
+<p>Class implementing validation of AccountNO object with OnlineAccount annotation.
+AccountNo must represent a saved account
+that is online e.g. AccountNO must have IBAN or local account number representing Account that is retrieved
+via AccountService instance and the property isActive of this Account is true.
+Trieda implementujúca validáciu objektov triedy AccountNO s OnlineAccount anotáciou.
+Platný objekt musí reprezentovať uložený, aktívny účet, t.j. objekt musí obsahovať buď IBAN alebo
+lokálne číslo účtu pomocou ktorého inštancia služby AccountService vie získať inštanciu triedy Account,
+ktorá má premennú isActive nastavenú na true.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="identifier">OnlineAccountValidator</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="account-service.html">accountService</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">accountService</span><span class="symbol">: </span><a href="../../fei.stuba.gono.kotlin.blocking.services/-account-service/index.html"><span class="identifier">AccountService</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="is-valid.html">isValid</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isValid</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.validation.OnlineAccountValidator$isValid(fei.stuba.gono.kotlin.pojo.AccountNO, )/p0">p0</span><span class="symbol">:</span>&nbsp;<a href="../../fei.stuba.gono.kotlin.pojo/-account-n-o/index.html"><span class="identifier">AccountNO</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.validation.OnlineAccountValidator$isValid(fei.stuba.gono.kotlin.pojo.AccountNO, )/p1">p1</span><span class="symbol">:</span>&nbsp;<span class="identifier">&lt;ERROR CLASS&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

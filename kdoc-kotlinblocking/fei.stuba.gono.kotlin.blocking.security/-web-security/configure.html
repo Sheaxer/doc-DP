@@ -1,0 +1,50 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>WebSecurity.configure - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.blocking.security</a>&nbsp;/&nbsp;<a href="index.html">WebSecurity</a>&nbsp;/&nbsp;<a href="./configure.html">configure</a><br/>
+<br/>
+<h1>configure</h1>
+<a name="fei.stuba.gono.kotlin.blocking.security.WebSecurity$configure(org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder)"></a>
+<code><span class="keyword">protected</span> <span class="keyword">fun </span><span class="identifier">configure</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.security.WebSecurity$configure(org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder)/auth">auth</span><span class="symbol">:</span>&nbsp;<span class="identifier">AuthenticationManagerBuilder</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><ul><li></li>
+</ul>
+<p>Sets up authorization using the UserDetailsService and adds BCryptPasswordEncoder as
+password encoder.
+Nastaví autorizáciu pomocou inštancie UserDetailsService a nastaví inštanciu
+BCryptPasswordEncoder ako enkóder hesiel</p>
+<h3>Parameters</h3>
+<p><a name="auth"></a>
+<code>auth</code> - builder of AuthenticationManager instance.
+    tvorca inštancie AuthenticationManager.</p>
+<h3>Exceptions</h3>
+<p><a name="Exception"></a>
+<code>Exception</code> - exception.
+výnimka.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="#">BCryptPasswordEncoder</a></p>
+<p><a href="#">UserDetailsService</a></p>
+</p>
+<a name="fei.stuba.gono.kotlin.blocking.security.WebSecurity$configure(org.springframework.security.config.annotation.web.builders.HttpSecurity)"></a>
+<code><span class="keyword">protected</span> <span class="keyword">fun </span><span class="identifier">configure</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.security.WebSecurity$configure(org.springframework.security.config.annotation.web.builders.HttpSecurity)/http">http</span><span class="symbol">:</span>&nbsp;<span class="identifier">HttpSecurity</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><ul><li></li>
+</ul>
+<p>Permits access to SIGN_UP_URL and sets need to authenticate access to any other endpoints. Adds
+JWTAuthenticationFilter and JWTAuthorizationFilter to security filters and sets STATELESS session creation
+policy.Povolí prístup k SIGN_UP_URL a nastaví potrebu authentikácie na povolenie
+prístupu k iným endpointom. Pridá inštancie tried JWTAuthenticationFilter a JWTAuthorizationFilter do
+bezpečnostných filtrov a nastaví politiku vytvárania session-ov na STATELESS.</p>
+<h3>Parameters</h3>
+<p><a name="http"></a>
+<code>http</code> - HttpSecurity</p>
+<h3>Exceptions</h3>
+<p><a name="Exception"></a>
+<code>Exception</code> - Exception</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-j-w-t-authentication-filter/index.html">JWTAuthenticationFilter</a></p>
+<p><a href="../-j-w-t-authorization-filter/index.html">JWTAuthorizationFilter</a></p>
+<p><a href="#">SessionCreationPolicy</a></p>
+</p>
+</BODY>
+</HTML>

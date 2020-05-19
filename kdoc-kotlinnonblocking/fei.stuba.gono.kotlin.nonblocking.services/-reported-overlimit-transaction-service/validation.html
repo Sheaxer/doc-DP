@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ReportedOverlimitTransactionService.validation - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.nonblocking.services</a>&nbsp;/&nbsp;<a href="index.html">ReportedOverlimitTransactionService</a>&nbsp;/&nbsp;<a href="./validation.html">validation</a><br/>
+<br/>
+<h1>validation</h1>
+<a name="fei.stuba.gono.kotlin.nonblocking.services.ReportedOverlimitTransactionService$validation(fei.stuba.gono.kotlin.nonblocking.pojo.ReportedOverlimitTransaction)"></a>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">validation</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.services.ReportedOverlimitTransactionService$validation(fei.stuba.gono.kotlin.nonblocking.pojo.ReportedOverlimitTransaction)/transaction">transaction</span><span class="symbol">:</span>&nbsp;<a href="../../fei.stuba.gono.kotlin.nonblocking.pojo/-reported-overlimit-transaction/index.html"><span class="identifier">ReportedOverlimitTransaction</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><ul><li></li>
+</ul>
+<p>Checks if the entity is valid.
+Skontroluje či entita je korektná.</p>
+<h3>Parameters</h3>
+<p><a name="transaction"></a>
+<code>transaction</code> - entity to be validated.
+    entita, ktorá má byť validovaná.</p>
+<h3>Exceptions</h3>
+<p><a name="ReportedOverlimitTransactionValidationException"></a>
+<code>ReportedOverlimitTransactionValidationException</code> - exception containing the failed
+validation error codes if the entity was not valid.
+výnimka s validačnými chybnými kódmi vyvolaná, ak entita nebola korektná.</p>
+<p><strong>Return</strong><br/>
+Mono emitting that the operation completed or Mono.error() containing
+ReportedOverlimitTransactionValidationException with the failed validation error codes.
+Mono emitujúce informáciu, že operácia prebehla ak entita bola korektná alebo
+Mono.error() obsahujúca ReportedOverlimitTransactionValidationException</p>
+</BODY>
+</HTML>

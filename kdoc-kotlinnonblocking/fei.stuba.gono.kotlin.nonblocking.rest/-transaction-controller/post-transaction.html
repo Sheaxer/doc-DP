@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TransactionController.postTransaction - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.nonblocking.rest</a>&nbsp;/&nbsp;<a href="index.html">TransactionController</a>&nbsp;/&nbsp;<a href="./post-transaction.html">postTransaction</a><br/>
+<br/>
+<h1>postTransaction</h1>
+<a name="fei.stuba.gono.kotlin.nonblocking.rest.TransactionController$postTransaction(fei.stuba.gono.kotlin.nonblocking.pojo.ReportedOverlimitTransaction)"></a>
+<code><span class="identifier">@PostMapping</span><span class="symbol">(</span>["application/json"]<span class="symbol">)</span> <span class="identifier">@ResponseStatus</span><span class="symbol">(</span>HttpStatus.OK<span class="symbol">)</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">postTransaction</span><span class="symbol">(</span><span class="identifier">@RequestBody</span> <span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.rest.TransactionController$postTransaction(fei.stuba.gono.kotlin.nonblocking.pojo.ReportedOverlimitTransaction)/newTransaction">newTransaction</span><span class="symbol">:</span>&nbsp;<a href="../../fei.stuba.gono.kotlin.nonblocking.pojo/-reported-overlimit-transaction/index.html"><span class="identifier">ReportedOverlimitTransaction</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../fei.stuba.gono.kotlin.nonblocking.pojo/-reported-overlimit-transaction/index.html"><span class="identifier">ReportedOverlimitTransaction</span></a></code><ul><li></li>
+</ul>
+<p>POST method - validates the entity and if valid -
+generates new id and saves the entity.
+POST metóda - validuje entitu a ak je korektná - generuje nové id a uloží entitu.</p>
+<h3>Parameters</h3>
+<p><a name="newTransaction"></a>
+<code>newTransaction</code> - entity to be saved, must not be null.
+    entita, ktorá sa má uložiť, nesmie byť null.</p>
+<h3>Exceptions</h3>
+<p><a name="ReportedOverlimitTransactionValidationException"></a>
+<code>ReportedOverlimitTransactionValidationException</code> - exception containing validation
+error codes, thrown if the validation of entity fails.
+výnimka obsahujúca chybné validačné hlášky, vyvolaná ak je validácia neúspešná.</p>
+<p><strong>Return</strong><br/>
+the saved entity.
+uložená entita.</p>
+</BODY>
+</HTML>

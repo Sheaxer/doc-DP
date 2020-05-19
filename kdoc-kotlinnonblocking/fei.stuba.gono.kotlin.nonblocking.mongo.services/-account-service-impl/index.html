@@ -1,0 +1,59 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AccountServiceImpl - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.nonblocking.mongo.services</a>&nbsp;/&nbsp;<a href="./index.html">AccountServiceImpl</a><br/>
+<br/>
+<h1>AccountServiceImpl</h1>
+<code><span class="identifier">@Service</span> <span class="keyword">class </span><span class="identifier">AccountServiceImpl</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../fei.stuba.gono.kotlin.nonblocking.services/-account-service/index.html"><span class="identifier">AccountService</span></a></code><ul><li></li>
+</ul>
+<p>MongoDB implementation of service that manages nonblocking marshalling and de-marshalling
+Account objects using CRUD operrations and auto generated instance of AccountRepository. Uses Kotlin coroutines.
+Implementácia služby ktorá spravuje marshalling a de-marhalling objektov triedy Account
+pomocou CRUD operácii a inštanciu rozhrania AccountRepository. Využíva coroutines jazyka Kotlin.</p>
+<h3>Parameters</h3>
+<p><a name="accountRepository"></a>
+<code>accountRepository</code> - Repository providing CRUD operations on Account entities.
+Repozitár poskytujúce CRUD operácie nad entitami triedy Account.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="identifier">AccountServiceImpl</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.mongo.services.AccountServiceImpl$<init>(fei.stuba.gono.kotlin.nonblocking.mongo.repositories.AccountRepository)/accountRepository">accountRepository</span><span class="symbol">:</span>&nbsp;<a href="../../fei.stuba.gono.kotlin.nonblocking.mongo.repositories/-account-repository/index.html"><span class="identifier">AccountRepository</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="get-account-by-iban.html">getAccountByIban</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getAccountByIban</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.mongo.services.AccountServiceImpl$getAccountByIban(kotlin.String)/iban">iban</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../fei.stuba.gono.kotlin.pojo/-account/index.html"><span class="identifier">Account</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-account-by-local-account-number.html">getAccountByLocalAccountNumber</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getAccountByLocalAccountNumber</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.mongo.services.AccountServiceImpl$getAccountByLocalAccountNumber(kotlin.String)/number">number</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../fei.stuba.gono.kotlin.pojo/-account/index.html"><span class="identifier">Account</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

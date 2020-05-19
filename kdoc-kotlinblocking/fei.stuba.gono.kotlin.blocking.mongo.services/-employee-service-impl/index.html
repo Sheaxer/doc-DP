@@ -1,0 +1,82 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>EmployeeServiceImpl - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.blocking.mongo.services</a>&nbsp;/&nbsp;<a href="./index.html">EmployeeServiceImpl</a><br/>
+<br/>
+<h1>EmployeeServiceImpl</h1>
+<code><span class="identifier">@Service</span> <span class="keyword">class </span><span class="identifier">EmployeeServiceImpl</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../fei.stuba.gono.kotlin.blocking.services/-employee-service/index.html"><span class="identifier">EmployeeService</span></a></code><ul><li></li>
+</ul>
+<p>Implementation of EmployeeService using CRUD operations and auto generated instance of
+EmployeeRepository. Uses NextSequenceService instance for generating new ids to save entities.
+Implementácia rozhrania EmployeeService pomocou CRUD operácií a automaticky generovanej
+inštancie rozhrania EmployeeRepository. Na generáciu id pri ukladaní nových entít využíva inštanciu
+triedy NextSequenceService.</p>
+<h3>Parameters</h3>
+<p><a name="bCryptPasswordEncoder"></a>
+<code>bCryptPasswordEncoder</code> - Password encoder used to store salted and hashed passwords. Kódovač hesiel na
+ukladanie hašovaných hesiel s tzv. "salt-om".</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../../fei.stuba.gono.kotlin.blocking.mongo.repositories/-employee-repository/index.html">EmployeeRepository</a></p>
+<p><a href="../-next-sequence-service/index.html">NextSequenceService</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="identifier">EmployeeServiceImpl</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.mongo.services.EmployeeServiceImpl$<init>(fei.stuba.gono.kotlin.blocking.mongo.repositories.EmployeeRepository, fei.stuba.gono.kotlin.blocking.mongo.services.NextSequenceService, org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder)/employeeRepository">employeeRepository</span><span class="symbol">:</span>&nbsp;<a href="../../fei.stuba.gono.kotlin.blocking.mongo.repositories/-employee-repository/index.html"><span class="identifier">EmployeeRepository</span></a><span class="symbol">, </span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.mongo.services.EmployeeServiceImpl$<init>(fei.stuba.gono.kotlin.blocking.mongo.repositories.EmployeeRepository, fei.stuba.gono.kotlin.blocking.mongo.services.NextSequenceService, org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder)/nextSequenceService">nextSequenceService</span><span class="symbol">:</span>&nbsp;<a href="../-next-sequence-service/index.html"><span class="identifier">NextSequenceService</span></a><span class="symbol">, </span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.mongo.services.EmployeeServiceImpl$<init>(fei.stuba.gono.kotlin.blocking.mongo.repositories.EmployeeRepository, fei.stuba.gono.kotlin.blocking.mongo.services.NextSequenceService, org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder)/bCryptPasswordEncoder">bCryptPasswordEncoder</span><span class="symbol">:</span>&nbsp;<span class="identifier">BCryptPasswordEncoder</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="exists-by-username.html">existsByUsername</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">fun </span><span class="identifier">existsByUsername</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.mongo.services.EmployeeServiceImpl$existsByUsername(kotlin.String)/userName">userName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="find-employee-by-username.html">findEmployeeByUsername</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">fun </span><span class="identifier">findEmployeeByUsername</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.mongo.services.EmployeeServiceImpl$findEmployeeByUsername(kotlin.String)/userName">userName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/Optional.html"><span class="identifier">Optional</span></a><span class="symbol">&lt;</span><a href="../../fei.stuba.gono.kotlin.pojo/-employee/index.html"><span class="identifier">Employee</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-employee-by-id.html">getEmployeeById</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">fun </span><span class="identifier">getEmployeeById</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.mongo.services.EmployeeServiceImpl$getEmployeeById(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/Optional.html"><span class="identifier">Optional</span></a><span class="symbol">&lt;</span><a href="../../fei.stuba.gono.kotlin.pojo/-employee/index.html"><span class="identifier">Employee</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="save-employee.html">saveEmployee</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">fun </span><span class="identifier">saveEmployee</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.blocking.mongo.services.EmployeeServiceImpl$saveEmployee(fei.stuba.gono.kotlin.pojo.Employee)/employee">employee</span><span class="symbol">:</span>&nbsp;<a href="../../fei.stuba.gono.kotlin.pojo/-employee/index.html"><span class="identifier">Employee</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../fei.stuba.gono.kotlin.pojo/-employee/index.html"><span class="identifier">Employee</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

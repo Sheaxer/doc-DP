@@ -1,0 +1,53 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ClientServiceImpl - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.nonblocking.mongo.services</a>&nbsp;/&nbsp;<a href="./index.html">ClientServiceImpl</a><br/>
+<br/>
+<h1>ClientServiceImpl</h1>
+<code><span class="identifier">@Service</span> <span class="keyword">class </span><span class="identifier">ClientServiceImpl</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../fei.stuba.gono.kotlin.nonblocking.services/-client-service/index.html"><span class="identifier">ClientService</span></a></code><ul><li></li>
+</ul>
+<p>MongoDB implementation of service that handles marshalling and de-marshalling Client objects. Uses kotlin
+coroutines.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="identifier">ClientServiceImpl</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.mongo.services.ClientServiceImpl$<init>(fei.stuba.gono.kotlin.nonblocking.mongo.repositories.ClientRepository)/clientRepository">clientRepository</span><span class="symbol">:</span>&nbsp;<a href="../../fei.stuba.gono.kotlin.nonblocking.mongo.repositories/-client-repository.html"><span class="identifier">ClientRepository</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="client-exists-by-id.html">clientExistsById</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">clientExistsById</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.mongo.services.ClientServiceImpl$clientExistsById(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-client-by-id.html">getClientById</a></h4>
+</td>
+<td>
+<ul><li></li>
+</ul>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getClientById</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.mongo.services.ClientServiceImpl$getClientById(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../fei.stuba.gono.kotlin.pojo/-client/index.html"><span class="identifier">Client</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

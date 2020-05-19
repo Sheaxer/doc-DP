@@ -1,0 +1,25 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ErrorHandler.handleNotFound - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.nonblocking.errors</a>&nbsp;/&nbsp;<a href="index.html">ErrorHandler</a>&nbsp;/&nbsp;<a href="./handle-not-found.html">handleNotFound</a><br/>
+<br/>
+<h1>handleNotFound</h1>
+<a name="fei.stuba.gono.kotlin.nonblocking.errors.ErrorHandler$handleNotFound(java.lang.Exception)"></a>
+<code><span class="identifier">@ExceptionHandler</span><span class="symbol">(</span>[NormalClass(value=fei/stuba/gono/kotlin/errors/ReportedOverlimitTransactionNotFoundException)]<span class="symbol">)</span> <span class="identifier">@ResponseBody</span> <span class="identifier">@ResponseStatus</span><span class="symbol">(</span>HttpStatus.NOT_FOUND<span class="symbol">)</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">handleNotFound</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.errors.ErrorHandler$handleNotFound(java.lang.Exception)/ex">ex</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html"><span class="identifier">Exception</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">&gt;</span></code>
+<p>Handles ReportedOverlimitTransactionNotFoundException
+by returning the error code and sending HTTP code NOT_FOUND - 404. Suspending function.
+Spracúváva ReportedOverlimitTransactionNotFoundException výnimku
+vrátením HTTP kódu 404 Not Found a chybovej hlášky v tele správy.  Zastaviteľná funkcia.</p>
+<h3>Parameters</h3>
+<p><a name="ex"></a>
+<code>ex</code> - caught exception.
+    odchytená výnimka.</p>
+<p><strong>Return</strong><br/>
+Mono emitting the list containing the error message of ex.
+Mono emitujúce zoznam obsahujúcí chybovú hlášku v ex.</p>
+</BODY>
+</HTML>

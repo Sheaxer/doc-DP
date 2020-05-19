@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SecurityContextRepository.load - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.nonblocking.security</a>&nbsp;/&nbsp;<a href="index.html">SecurityContextRepository</a>&nbsp;/&nbsp;<a href="./load.html">load</a><br/>
+<br/>
+<h1>load</h1>
+<a name="fei.stuba.gono.kotlin.nonblocking.security.SecurityContextRepository$load(org.springframework.web.server.ServerWebExchange)"></a>
+<code><span class="keyword">fun </span><span class="identifier">load</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.security.SecurityContextRepository$load(org.springframework.web.server.ServerWebExchange)/p0">p0</span><span class="symbol">:</span>&nbsp;<span class="identifier">ServerWebExchange</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Mono</span><span class="symbol">&lt;</span><span class="identifier">SecurityContext</span><span class="symbol">&gt;</span></code><ul><li></li>
+</ul>
+<p>Retrieves the Authorization header of HTTP request, checks if it contains
+JWT and validates it.
+Načíta Authorization sekciu hlavičky HTTP požiadavky, skontroluje či táto sekcia
+obsahuje JWT a validuje JWT.</p>
+<h3>Parameters</h3>
+<p><a name="p0"></a>
+<code>p0</code> - provides access to HTTP request and response.
+    poskytuje prístup k HTTP požiadavke a odpovedi.</p>
+<p><strong>Return</strong><br/>
+Mono emitting SecurityContextImpl if authorization was successful or Mono.empty().
+otherwise.
+Mono emitujúce SecurityContextImpl obsahujúce ak autorizácia prebehla úspešne,
+Mono.empty() inak.</p>
+</BODY>
+</HTML>

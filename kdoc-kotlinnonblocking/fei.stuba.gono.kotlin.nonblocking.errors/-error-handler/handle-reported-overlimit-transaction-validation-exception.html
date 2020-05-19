@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ErrorHandler.handleReportedOverlimitTransactionValidationException - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.nonblocking.errors</a>&nbsp;/&nbsp;<a href="index.html">ErrorHandler</a>&nbsp;/&nbsp;<a href="./handle-reported-overlimit-transaction-validation-exception.html">handleReportedOverlimitTransactionValidationException</a><br/>
+<br/>
+<h1>handleReportedOverlimitTransactionValidationException</h1>
+<a name="fei.stuba.gono.kotlin.nonblocking.errors.ErrorHandler$handleReportedOverlimitTransactionValidationException(fei.stuba.gono.kotlin.nonblocking.errors.ReportedOverlimitTransactionValidationException)"></a>
+<code><span class="identifier">@ExceptionHandler</span><span class="symbol">(</span>[NormalClass(value=fei/stuba/gono/kotlin/nonblocking/errors/ReportedOverlimitTransactionValidationException)]<span class="symbol">)</span> <span class="identifier">@ResponseStatus</span><span class="symbol">(</span>HttpStatus.BAD_REQUEST<span class="symbol">)</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">handleReportedOverlimitTransactionValidationException</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.errors.ErrorHandler$handleReportedOverlimitTransactionValidationException(fei.stuba.gono.kotlin.nonblocking.errors.ReportedOverlimitTransactionValidationException)/ex">ex</span><span class="symbol">:</span>&nbsp;<a href="../-reported-overlimit-transaction-validation-exception/index.html"><span class="identifier">ReportedOverlimitTransactionValidationException</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Handles validation errors that occur during put and post REST methods. Returns
+HTTTp code BAD_REQUEST - 400 and list of validation errors. Suspending function.
+Spracuváva validačné výnimky ktoré môžu nastať počas PUT a POST REST metód. Vracia
+HTTP kód BAD_REQUEST - 400 a zoznam validačných chýb v tele odpovede. Zastaviteľná funkcia.</p>
+<h3>Parameters</h3>
+<p><a name="ex"></a>
+<code>ex</code> - exception containing errors that were discovered during validation.
+    výnimka obsahujúca zoznam chybných hlášok zistených počas validácie.</p>
+<p><strong>See Also</strong><br/>
+<p><a href="../-reported-overlimit-transaction-validation-exception/index.html">ReportedOverlimitTransactionValidationException</a></p>
+<p><a href="../../fei.stuba.gono.kotlin.nonblocking.validation/-reported-overlimit-transaction-validator/index.html">fei.stuba.gono.kotlin.nonblocking.validation.ReportedOverlimitTransactionValidator</a></p>
+</p>
+<p><strong>Return</strong><br/>
+Mono emitting a List of errors discovered during validation.
+Mono emitujúce zoznam chybových hlášok zistených počas validácie.</p>
+</BODY>
+</HTML>

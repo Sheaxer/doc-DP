@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TransactionController.postTransaction - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.blocking.rest</a>&nbsp;/&nbsp;<a href="index.html">TransactionController</a>&nbsp;/&nbsp;<a href="./post-transaction.html">postTransaction</a><br/>
+<br/>
+<h1>postTransaction</h1>
+<a name="fei.stuba.gono.kotlin.blocking.rest.TransactionController$postTransaction(fei.stuba.gono.kotlin.blocking.pojo.ReportedOverlimitTransaction)"></a>
+<code><span class="identifier">@PostMapping</span><span class="symbol">(</span>["application/json"]<span class="symbol">)</span> <span class="identifier">@ResponseStatus</span><span class="symbol">(</span>HttpStatus.OK<span class="symbol">)</span> <span class="keyword">fun </span><span class="identifier">postTransaction</span><span class="symbol">(</span><span class="identifier">@RequestBody</span> <span class="identifier" id="fei.stuba.gono.kotlin.blocking.rest.TransactionController$postTransaction(fei.stuba.gono.kotlin.blocking.pojo.ReportedOverlimitTransaction)/newTransaction">newTransaction</span><span class="symbol">:</span>&nbsp;<a href="../../fei.stuba.gono.kotlin.blocking.pojo/-reported-overlimit-transaction/index.html"><span class="identifier">ReportedOverlimitTransaction</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../fei.stuba.gono.kotlin.blocking.pojo/-reported-overlimit-transaction/index.html"><span class="identifier">ReportedOverlimitTransaction</span></a></code><ul><li></li>
+</ul>
+<p>POST method - generates new id and saves the entity with the new id.
+POST metóda - generuje nové id a uloží entitu s týmto id.</p>
+<h3>Parameters</h3>
+<p><a name="newTransaction"></a>
+<code>newTransaction</code> - entity to be saved.entita, ktorá sa má uložiť.</p>
+<p><strong>Return</strong><br/>
+saved entity.uložená entita.</p>
+<a name="fei.stuba.gono.kotlin.blocking.rest.TransactionController$postTransaction(kotlin.String, fei.stuba.gono.kotlin.blocking.pojo.ReportedOverlimitTransaction)"></a>
+<code><span class="identifier">@PostMapping</span><span class="symbol">(</span>["application/json"]<span class="symbol">, </span>["/{id}"]<span class="symbol">)</span> <span class="keyword">fun </span><span class="identifier">postTransaction</span><span class="symbol">(</span><span class="identifier">@PathVariable</span> <span class="identifier" id="fei.stuba.gono.kotlin.blocking.rest.TransactionController$postTransaction(kotlin.String, fei.stuba.gono.kotlin.blocking.pojo.ReportedOverlimitTransaction)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier">@RequestBody</span> <span class="identifier" id="fei.stuba.gono.kotlin.blocking.rest.TransactionController$postTransaction(kotlin.String, fei.stuba.gono.kotlin.blocking.pojo.ReportedOverlimitTransaction)/transaction">transaction</span><span class="symbol">:</span>&nbsp;<a href="../../fei.stuba.gono.kotlin.blocking.pojo/-reported-overlimit-transaction/index.html"><span class="identifier">ReportedOverlimitTransaction</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../fei.stuba.gono.kotlin.blocking.pojo/-reported-overlimit-transaction/index.html"><span class="identifier">ReportedOverlimitTransaction</span></a><span class="symbol">?</span></code><ul><li></li>
+</ul>
+<p>POST method - saves the entity with the given id.</p>
+<h3>Parameters</h3>
+<p><a name="id"></a>
+<code>id</code> - id that will represent the saved entity.</p>
+<p><a name="transaction"></a>
+<code>transaction</code> - entity to be saved.</p>
+<p><strong>Return</strong><br/>
+saved entity.</p>
+</BODY>
+</HTML>

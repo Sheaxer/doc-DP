@@ -1,0 +1,26 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>NextSequenceService.getNewId - demo</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">demo</a>&nbsp;/&nbsp;<a href="../index.html">fei.stuba.gono.kotlin.nonblocking.mongo.services</a>&nbsp;/&nbsp;<a href="index.html">NextSequenceService</a>&nbsp;/&nbsp;<a href="./get-new-id.html">getNewId</a><br/>
+<br/>
+<h1>getNewId</h1>
+<a name="fei.stuba.gono.kotlin.nonblocking.mongo.services.NextSequenceService$getNewId(org.springframework.data.repository.reactive.ReactiveCrudRepository((kotlin.Any, kotlin.String)), kotlin.String)"></a>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getNewId</span><span class="symbol">(</span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.mongo.services.NextSequenceService$getNewId(org.springframework.data.repository.reactive.ReactiveCrudRepository((kotlin.Any, kotlin.String)), kotlin.String)/rep">rep</span><span class="symbol">:</span>&nbsp;<span class="identifier">ReactiveCrudRepository</span><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="fei.stuba.gono.kotlin.nonblocking.mongo.services.NextSequenceService$getNewId(org.springframework.data.repository.reactive.ReactiveCrudRepository((kotlin.Any, kotlin.String)), kotlin.String)/seqName">seqName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code><ul><li></li>
+</ul>
+<p>Retrieves new value of an id for saving new object in a repository. Updates maximal value
+of sequence with the given name, checks if an entity with this id already exists in the repository.
+If it does exist, function finds the actual maximal value of id used to store entities in the repository and
+updates the sequence.</p>
+<h3>Parameters</h3>
+<p><a name="rep"></a>
+<code>rep</code> - repository where the object will be saved.</p>
+<p><a name="seqName"></a>
+<code>seqName</code> - name of the sequence holding the id of last saved object.</p>
+<p><strong>Return</strong><br/>
+value of id that should be used to save object in the given repository.</p>
+</BODY>
+</HTML>
